@@ -20,6 +20,26 @@
 */
 
 
+// funcion que acepte 3 cadenas como argumentos; nombre y apellido
+function makeNamesObject(primeraCadena,segundaCadena,terceraCadena) {
+// debera regresar un objeto con 3 propiedades: name: 1st name; value: last name
+nombre1 = primeraCadena.split(" ")
+nombre2 = segundaCadena.split(" ")
+nombre3 = terceraCadena.split(" ")
+
+
+var objetoUno = {}
+
+objetoUno = nombre1[0],nombre1[1]
+
+
+console.log(objetoUno);
+// objetoUno.push(nombre1[0])
+}
+
+// console.log(objetoUno);
+
+
 
 
 
@@ -30,7 +50,7 @@ var greatMenObj = makeNamesObject("George Washington", "Abe Lincoln", "Kanye Wes
 var greatWomenObj = makeNamesObject("Rosa Parks", "Amelia Earhart", "Charlotte Webb")
 
 console.assert(greatMenObj.George === "Washington")
-console.assert(greatMenObj['Abe'] === "Lincoln")
+console.assert(greatMenObj.Abe === "Lincoln")
 console.assert(greatMenObj.Kanye === "West")
 //-------------------
 console.assert(greatWomenObj.Rosa === "Parks")

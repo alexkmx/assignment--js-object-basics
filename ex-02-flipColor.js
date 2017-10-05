@@ -7,7 +7,17 @@
  * has the value blue, it should change it to red, and
  * vice-versa.
 */
+function flipColor(objeto) {
 
+if (objeto.color === 'blue'){
+  objeto.color = 'red'
+} else {
+  objeto.color = 'blue'
+}
+
+return objeto
+
+}
 
 
 
