@@ -21,26 +21,28 @@
 
 
 // funcion que acepte 3 cadenas como argumentos; nombre y apellido
+
+
 function makeNamesObject(primeraCadena,segundaCadena,terceraCadena) {
-// debera regresar un objeto con 3 propiedades: name: 1st name; value: last name
-nombre1 = primeraCadena.split(" ")
-nombre2 = segundaCadena.split(" ")
-nombre3 = terceraCadena.split(" ")
 
+var separarPrimeraCadena = primeraCadena.split(' ')
+var separarSegundaCadena = segundaCadena.split(' ')
+var separarTerceraCadena = terceraCadena.split(' ')
 
-var objetoUno = {}
+var nombrePrimCad = separarPrimeraCadena[0]
+var nombreSeguCad = separarSegundaCadena[0]
+var nombreTerceCad = separarTerceraCadena[0]
 
-objetoUno = nombre1[0],nombre1[1]
+var apellidoPrimCad = separarPrimeraCadena[1]
+var appellidoSeguCad = separarSegundaCadena[1]
+var apellidoTerceCad = separarTerceraCadena[1]
 
-
-console.log(objetoUno);
-// objetoUno.push(nombre1[0])
+var newObject = {}
+newObject[nombrePrimCad]=apellidoPrimCad
+newObject[nombreSeguCad]=appellidoSeguCad
+newObject[nombreTerceCad]=apellidoTerceCad
+return newObject
 }
-
-// console.log(objetoUno);
-
-
-
 
 
 

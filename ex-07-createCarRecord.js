@@ -19,9 +19,27 @@
 **/
 
 
+function createCarRecord(getBrand,getSubBrand,getModel,getPlate) {
 
+  if(typeof getBrand === 'undefined' ||typeof getSubBrand === 'undefined' ||typeof getModel === 'undefined'||typeof getPlate === 'undefined') {
+// console.log('new record must have make, model, year, and license values');
+    return 'new record must have make, model, year, and license values'
+  }else if(typeof getBrand != 'string' ||typeof getSubBrand != 'string' ||typeof getPlate != 'string'){
+// console.log('1st, 2nd, and 4th arguments must be String');
+    return '1st, 2nd, and 4th arguments must be String'
+  }else if (typeof getModel != 'number') {
+// console.log('3rd argument must be a Number');
+    return '3rd argument must be a Number'
+  }
+  var myObject = {}
+  myObject.make = getBrand,
+  myObject.model = getSubBrand,
+  myObject.year = getModel,
+  myObject.license = getPlate,
 
-
+  console.log(myObject);
+  return myObject
+}
 
 
 

@@ -6,7 +6,19 @@
  * and `lastName` properties that have string values.
  *
 **/
+function createNameObject(takeString) {
 
+var separar = takeString.split(' ')
+var firstNameString = separar[0]
+var lastNameString = separar[1]
+
+var myObject = {}
+
+myObject.firstName = separar[0]
+myObject.lastName = separar[1]
+
+  return myObject
+}
 
 
 

@@ -20,6 +20,23 @@
  * HINT: You might be able to reuse some of the logic from createNameObject()
 */
 
+function createListOfObjects(getStrig) {
+
+
+
+for(var i = 0 ; i < getStrig.length; i++){
+
+var lista = getStrig[i].split(' ')
+
+var myObject = {}
+
+myObject.firstName = lista[0]
+myObject.lastName = lista[1]
+console.log(myObject);
+}
+
+  // console.log(arrayACadena);
+}
 
 
 

@@ -8,7 +8,35 @@
  *
 **/
 
+function getFullNames(takeArrayString) {
+var arrayNames = []
+var arrayNames2 = []
+var arrayNames3 = []
+var arrayNames4 = []
 
+  for(var i = 0;i < takeArrayString.length; i++){
+
+if (takeArrayString[i].gender === 'male') {
+  takeArrayString[i].gender = 'Mr.'
+}  else {
+  takeArrayString[i].gender = 'Ms.'
+}
+arrayNames = takeArrayString[0].gender+takeArrayString[0].first+takeArrayString[0].last
+arrayNames2 = takeArrayString[1].gender+takeArrayString[1].first+takeArrayString[1].last
+arrayNames3 = takeArrayString[2].gender+takeArrayString[2].first+takeArrayString[2].last
+arrayNames4 = takeArrayString[3].gender+takeArrayString[3].first+takeArrayString[3].last
+
+
+}
+console.log(arrayNames.toString());
+console.log(arrayNames2.toString());
+console.log(arrayNames3.toString());
+console.log(arrayNames4.toString());
+return arrayNames.toString()
+return arrayNames2.toString()
+return arrayNames3.toString()
+return arrayNames4.toString()
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
